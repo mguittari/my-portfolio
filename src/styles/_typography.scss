@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kreon:wght@300..700&display=swap');
+@use "variables" as var;
 
-$title-font: "Kreon";
-$main-font: "Jost";
+@mixin text-style($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+  }
 
 p {
-    color: blue;
-    font-family: $main-font;
+    @include text-style(var.$font-size-base, var.$font-weight-base);
+    padding: .5rem;
+    font-family: var.$font-family-p;
+}
+
+h1, h2, h3 {
+    font-family: var.$font-family-title;
+    padding: .6rem;
+    text-align: center;
 }
 
 h1 {
-    font-family: $title-font;
-}
+    @include text-style(var.$font-size-2xl, var.$font-weight-semibold);
+  }
+
+h2 {
+    @include text-style(var.$font-size-xl, var.$font-weight-medium);
+  }
+
+h3 {
+    @include text-style(var.$font-size-2xl, var.$font-weight-medium);
+  }
