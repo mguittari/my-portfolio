@@ -5,12 +5,14 @@ function App() {
 		<>
 			<main>
 				<div className="top-bloc">
-					<p>Composant 1</p>
+					<h3 className="component-1">Composant 1</h3>
 				</div>
 				<div className="header-bloc">
-					<h1>Composant 2</h1>
+					<h1 className="component-2">COMPOSANT 2</h1>
 				</div>
-				<div className="education-bloc">Composant 3</div>
+				<div className="education-bloc">
+					<h2 className="component-3">Composant 3</h2>
+				</div>
 			</main>
 		</>
 	);
