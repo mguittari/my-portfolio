@@ -1,12 +1,11 @@
 import "./app.scss";
+import TopLightPinkBloc from "./components/TopLightPinkBlock/TopLightPinkBlock";
 
 function App() {
 	return (
 		<>
 			<main>
-				<div className="top-bloc">
-					<h3 className="component-1">Composant 1</h3>
-				</div>
+				<TopLightPinkBloc />
 				<div className="header-bloc">
 					<h1 className="component-2">COMPOSANT 2</h1>
 				</div>
