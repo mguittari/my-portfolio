@@ -1,0 +1,25 @@
+@use "../../styles/variables" as var;
+
+.container {
+    background-color: var.$light-pink;
+    overflow: hidden;
+}
+
+.container-text {
+    padding-left: 100%;
+    white-space: nowrap;
+    display: inline-block;  
+    text-align: center;
+    animation: scroll-animation 15s infinite linear;
+}
+
+@keyframes scroll-animation {
+    0% {
+      transform: translate3d(0,0,0);
+    }
+    100% {
+      transform: translate3d(-100%,0,0);
+    }
+  }
+
+
