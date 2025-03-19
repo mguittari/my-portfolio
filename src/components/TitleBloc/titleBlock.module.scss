@@ -1,0 +1,67 @@
+@use "../../styles/variables" as var;
+
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-container{
+    width: 200%;
+    animation: slide 16s infinite linear;
+    overflow: hidden;
+    @extend %flex;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.name-container, .job-container {
+    height: 4rem;
+    width: 100%;
+}
+
+.name-container {
+    background-color: var.$forest-green;
+    @extend %flex;
+}
+
+.job-container {
+    background-color: var.$mint;
+    @extend %flex;
+}
+
+.my-name, .my-job {
+    white-space: nowrap;
+}
+
+.my-name {
+    color: var.$cream;
+}
+
+.my-job {
+    color: var.$sapphire-blue;
+    font-size: 28px;
+}
+
+@media screen and (width > 768px){
+    .name-container, .job-container {
+        height: calc(4rem * 2);
+    }
+    .my-name, .my-job {
+        font-size: calc(34px * 2);
+    }
+    .slider-container{
+        animation: slide 26s infinite linear;
+    }
+}
