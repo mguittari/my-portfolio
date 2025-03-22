@@ -1,0 +1,87 @@
+@use "../../styles/variables" as var;
+
+.main-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding-bottom: 1.5rem;
+}
+
+.sub-container {
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.technos {
+    color: var.$charcoal;
+}
+
+.formation {
+    color: var.$cream;
+}
+
+#studies-main-container {
+    background-color: var.$tomato-red;
+}
+
+#skills-main-container {
+    background-color: var.$golden-yellow;
+}
+
+#studies-sub-container {
+    padding-left: 1rem;
+    background-color: var.$light-red;
+    color: var.$cream;
+    li::before {
+        color: var.$cream;
+      }
+}
+
+#skills-sub-container {
+    background-color: var.$light-yellow;
+    color: var.$charcoal;
+    li::before {
+        color: var.$charcoal;
+      }
+}
+
+.content {
+    height: 100%;
+    overflow: scroll;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: .5rem 0 .5rem 0;
+}
+
+li {
+    display: flex;
+    align-items: start; /* Alignement du texte et de la puce */
+    gap: 8px; /* Espacement entre la puce et le texte */
+}
+  
+li::before {
+    content: "■"; 
+    font-size: 2.2rem;
+}
+
+@media screen and (width > 500px){
+    .technos, .formation {
+        font-size: calc(30px * 2)
+    }
+    li::before {
+        font-size: 2.9rem;
+    }
+    li>p {
+        font-size: 32px;
+    }
+    .content {
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+    #skills-sub-container {
+        padding-left: 2rem;
+    }
+}
