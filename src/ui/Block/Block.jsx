@@ -1,6 +1,12 @@
 import styles from "./block.module.scss";
 
-export default function Block({ mainContainerId, subContainerId, title }) {
+export default function Block({
+	mainContainerId,
+	subContainerId,
+	title,
+	studiesData,
+	skillsData,
+}) {
 	return (
 		<div id={styles[mainContainerId]} className={styles["main-container"]}>
 			<h2 className={styles[title.toLowerCase()]}>{title}</h2>
@@ -8,24 +14,24 @@ export default function Block({ mainContainerId, subContainerId, title }) {
 				<div className={styles.content}>
 					{" "}
 					<ul className={styles.list}>
-						<li>
-							<p>Élément 1 Wild Code School 2025</p>
-						</li>
-						<li>
-							<p>Élément 2 Wild Code School 2024</p>
-						</li>
-						<li>
-							<p>Master Création Littéraire Le Havre</p>
-						</li>
-						<li>
-							<p>Élément 4</p>
-						</li>
-						<li>
-							<p>Élément 5</p>
-						</li>
-						<li>
-							<p>Élément 6</p>
-						</li>
+						{studiesData
+							? studiesData.map((element) => {
+									return (
+										<li key={element.dates}>
+											<p>
+												{element.title} <br /> {element.school} <br />{" "}
+												{element.dates} <br /> {element.description}
+											</p>
+										</li>
+									);
+								})
+							: skillsData.map((skill) => {
+									return (
+										<li key={skill}>
+											<p>{skill}</p>
+										</li>
+									);
+								})}
 					</ul>
 				</div>
 			</div>
