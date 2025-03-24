@@ -47,6 +47,7 @@
 
 .my-name {
     color: var.$cream;
+    font-size: 28px;
 }
 
 .my-job {
@@ -59,7 +60,7 @@
         height: calc(4rem * 2);
     }
     .my-name, .my-job {
-        font-size: calc(34px * 2);
+        font-size: calc(28px * 2.3);
     }
     .slider-container{
         animation: slide 26s infinite linear;

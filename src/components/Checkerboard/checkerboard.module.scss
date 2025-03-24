@@ -1,0 +1,29 @@
+@use "../../styles/variables" as var;
+
+.checkerboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    grid-template-rows: repeat(4, 1fr); /* 2 lignes */
+    width: 100vw;
+    
+  }
+  
+  .cell {
+    aspect-ratio: 1 / 1; 
+  }
+
+  .blue {
+    background-color: var.$aquamarine;
+  }
+
+  .purple {
+    background-color: var.$dark-purple;
+  }
+
+  @media screen and (width > 768px){
+    .checkerboard{
+        grid-template-columns: repeat(8, 1fr);
+        
+    }
+}
+
