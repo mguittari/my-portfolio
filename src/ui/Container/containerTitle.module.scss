@@ -1,0 +1,23 @@
+@use "../../styles/placeholders";
+@use "../../styles/variables" as var;
+
+#container-projects {
+    height: 4rem;
+    width: 100%;
+    @extend %flex;
+    background-color: var.$light-mint;
+}
+
+#title-projects {
+    font-size: 28px;
+    color: var.$charcoal;
+}
+
+@media screen and (width > 768px){
+    #container-projects {
+        height: calc(4rem * 2);
+    }
+    #title-projects {
+        font-size: calc(28px * 2.3);
+    }
+}
