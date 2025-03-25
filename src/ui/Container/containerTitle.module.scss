@@ -1,23 +1,46 @@
 @use "../../styles/placeholders";
 @use "../../styles/variables" as var;
 
-#container-projects {
+#container-projects, #name-container, #job-container {
     height: 4rem;
     width: 100%;
     @extend %flex;
+}
+
+#name-container {
+    background-color: var.$forest-green;
+}
+
+#container-projects {
     background-color: var.$light-mint;
 }
 
-#title-projects {
+#job-container {
+    background-color: var.$mint;
+}
+
+#title-projects, #my-name, #my-job {
     font-size: 28px;
+    white-space: nowrap;
+}
+
+#title-projects {
     color: var.$charcoal;
 }
 
+#my-name {
+    color: var.$cream;
+}
+
+#my-job {
+    color: var.$sapphire-blue;
+}
+
 @media screen and (width > 768px){
-    #container-projects {
+    #container-projects, #name-container, #job-container {
         height: calc(4rem * 2);
     }
-    #title-projects {
+    #title-projects, #my-name, #my-job {
         font-size: calc(28px * 2.3);
     }
 }
