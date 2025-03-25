@@ -1,11 +1,5 @@
 @use "../../styles/variables" as var;
-
-
-%flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@use "../../styles/placeholders";
 
 .slider-container{
     width: 200%;
