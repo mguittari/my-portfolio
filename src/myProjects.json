@@ -1,0 +1,27 @@
+[
+	{
+		"title": "NOIR ET BLANC",
+		"description": "Un projet artistique en noir et blanc explorant le contraste et la lumière.",
+		"image": "IMAGE1"
+	},
+	{
+		"title": "TODOLIST",
+		"description": "Une application pour gérer vos tâches quotidiennes avec une interface minimaliste.",
+		"image": "IMAGE2"
+	},
+	{
+		"title": "ROULETTE RUSSE",
+		"description": "Un site web interactif mettant en avant des animations fluides et modernes.",
+		"image": "IMAGE3"
+	},
+	{
+		"title": "BONNETEAU",
+		"description": "Une plateforme de blog pour partager des idées et des expériences.",
+		"image": "IMAGE4"
+	},
+	{
+		"title": "WAVELY",
+		"description": "Une plateforme de blog pour partager des idées et des expériences.",
+		"image": "IMAGE5"
+	}
+]

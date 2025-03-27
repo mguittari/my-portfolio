@@ -1,5 +1,5 @@
 import Block from "../../ui/Block/Block";
-import data from "../../data.json";
+import data from "../../myDatas.json";
 import styles from "./skillsAndStudiesBlocks.module.scss";
 
 export default function SkillsAndStudiesBlocks() {

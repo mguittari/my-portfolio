@@ -1,0 +1,41 @@
+@use "../../styles/variables" as var;
+@use "../../styles/placeholders";
+
+
+.slide-item-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.even {
+    color: var.$cream;
+    background-color: var.$forest-green;
+}
+
+.odd {
+    color: var.$charcoal;
+    background-color: var.$mint;
+}
+
+.item-sub-container {
+    border-radius: 1rem;
+    height: 100%;
+    margin: auto;
+    width: 90%;
+}
+
+.content {
+    height: 100%;
+    @extend %flex;
+}
+
+@media screen and (width >= 768px){
+    .item-sub-container {
+        width: 40%;
+        margin: auto;
+    }
+}
+

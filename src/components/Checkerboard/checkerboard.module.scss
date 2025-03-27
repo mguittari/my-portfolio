@@ -20,7 +20,7 @@
     background-color: var.$dark-purple;
   }
 
-  @media screen and (width > 768px){
+  @media screen and (width >= 768px){
     .checkerboard{
         grid-template-columns: repeat(8, 1fr);
         
