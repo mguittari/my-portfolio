@@ -8,6 +8,7 @@
     height: 100%;
     width: 100%;
     padding-bottom: 1.5rem;
+    
 }
 
 .even {
@@ -25,17 +26,38 @@
     height: 100%;
     margin: auto;
     width: 90%;
+    overflow: scroll;
 }
 
 .content {
     height: 100%;
-    @extend %flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.img {
+    border-radius: 0.7rem;
+    width: 90%;
+    margin: 1.2rem auto 0;
+    display: flex;
+}
+
+.description {
+    margin: 0 1rem 0 1rem;
 }
 
 @media screen and (width >= 768px){
     .item-sub-container {
         width: 40%;
         margin: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
     }
+    .description {
+        font-size: 32px;
+    }
+    
 }
 

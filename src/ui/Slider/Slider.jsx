@@ -14,6 +14,7 @@ export default function Slider() {
 			prevIndex === 0 ? data.length - 1 : prevIndex - 1,
 		);
 	};
+	console.log(data[currentIndex].github_url);
 
 	return (
 		<>
@@ -21,6 +22,9 @@ export default function Slider() {
 				<SlideItem
 					title={data[currentIndex].title}
 					image={data[currentIndex].image}
+					description={data[currentIndex].description}
+					githubUrl={data[currentIndex].github_url}
+					appUrl={data[currentIndex].app_url}
 					index={currentIndex}
 				/>
 				{currentIndex !== 0 && (
