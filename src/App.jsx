@@ -4,6 +4,7 @@ import TitleBlock from "./components/TitleBloc/TitleBlock";
 import SkillsAndStudiesBlocks from "./components/SkillsAndStudiesBlocks/SkillsAndStudiesBlocks";
 import Checkerboard from "./components/Checkerboard/Checkerboard";
 import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent";
+import KitchenFloor from "./components/KitchenFloor/KitchenFloor";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<SkillsAndStudiesBlocks />
 			<Checkerboard />
 			<ProjectsComponent />
+			<KitchenFloor />
 		</main>
 	);
 }
