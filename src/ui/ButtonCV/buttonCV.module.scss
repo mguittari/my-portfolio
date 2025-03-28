@@ -1,0 +1,20 @@
+@use "../../styles/variables" as var;
+
+.button {
+    text-align: center;
+    font-size: 18px;
+    color: var.$charcoal;
+    background-color: var.$light-mint;
+    font-family: var.$font-family-link;
+    padding: 1.5rem;
+    font-weight: 500;
+    width: 17rem;
+    box-shadow: 9px 9px 0 var.$charcoal;
+}
+
+@media screen and (width >= 800px) {
+    .button {
+        font-size: calc(18px * 1.7);
+        width: 26rem;
+    }
+}
