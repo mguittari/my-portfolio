@@ -12,6 +12,10 @@
     box-shadow: 9px 9px 0 var.$charcoal;
 }
 
+.button:hover{
+    background-color: var.$cream;
+}
+
 @media screen and (width >= 800px) {
     .button {
         font-size: calc(18px * 1.7);

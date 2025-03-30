@@ -6,6 +6,7 @@ import Checkerboard from "./components/Checkerboard/Checkerboard";
 import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent";
 import KitchenFloor from "./components/KitchenFloor/KitchenFloor";
 import SocialMediaComponent from "./components/SocialMediaComponent/SocialMediaComponent";
+import StaircasePattern from "./components/StaircasePattern/StaircasePattern";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 			<ProjectsComponent />
 			<KitchenFloor />
 			<SocialMediaComponent />
+			<StaircasePattern />
 		</main>
 	);
 }
