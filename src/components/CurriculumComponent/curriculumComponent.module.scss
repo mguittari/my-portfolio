@@ -1,0 +1,26 @@
+@use "../../styles/variables" as var;
+@use "../../styles/placeholders";
+
+.CV-container {
+    height: 15rem;
+    background-color: var.$aquamarine;
+    @extend %flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 3px;
+}
+
+@media screen and (width >= 1024px) {
+    .CV-container {
+        flex-direction: row;
+        gap: 6rem;
+    }
+}
+
+@media screen and (width >= 800px) {
+    .CV-container {
+        height: 18rem;
+    }
+}
+
+
