@@ -7,7 +7,7 @@
     @extend %flex;
     flex-direction: column;
     gap: 2rem;
-    padding-bottom: 3px;
+    padding-bottom: 8px;
 }
 
 @media screen and (width >= 1024px) {

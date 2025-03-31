@@ -7,6 +7,7 @@ import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent"
 import KitchenFloor from "./components/KitchenFloor/KitchenFloor";
 import SocialMediaComponent from "./components/SocialMediaComponent/SocialMediaComponent";
 import StaircasePattern from "./components/StaircasePattern/StaircasePattern";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 			<KitchenFloor />
 			<SocialMediaComponent />
 			<StaircasePattern />
+			<Footer />
 		</main>
 	);
 }
