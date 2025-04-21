@@ -12,7 +12,7 @@ export default function TitleBlock() {
 			<ContainerTitle
 				containerId="job-container"
 				titleId="my-job"
-				title="DÉVELOPPEUR FRONT-END"
+				title="DÉVELOPPEUR WEB FULL-STACK"
 			/>
 		</div>
 	);

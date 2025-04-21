@@ -22,7 +22,7 @@ h1 {
   }
 
 h2 {
-    @include text-style(var.$font-size-xl, var.$font-weight-medium);
+    @include text-style(var.$font-size-lg, var.$font-weight-medium);
   }
 
 h3 {

@@ -4,9 +4,8 @@ import styles from "./skillsAndStudiesBlocks.module.scss";
 
 export default function SkillsAndStudiesBlocks() {
 	const skills = data.skills;
-	console.log(skills);
 	const studies = data.studies;
-	console.log(studies);
+	const exp = data.experience;
 
 	return (
 		<div className={styles["block-container"]}>
@@ -21,6 +20,12 @@ export default function SkillsAndStudiesBlocks() {
 				subContainerId="skills-sub-container"
 				title="TECHNOS"
 				skillsData={skills}
+			/>
+			<Block
+				mainContainerId="exp-main-container"
+				subContainerId="exp-sub-container"
+				title="EXPÉRIENCE"
+				expData={exp}
 			/>
 		</div>
 	);
