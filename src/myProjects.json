@@ -29,7 +29,7 @@
 	},
 	{
 		"title": "WAVELY",
-		"description": "Application développée en équipe qui propose à l'utilisateur des fréquences thérapeutiques pour soulager certaines affections et maux (fonctionnalités principales : connexion, inscription, déconnexion, accès à son compte utilisateur...).",
+		"description": "Application développée en équipe qui propose à l'utilisateur des fréquences thérapeutiques pour soulager certaines affections et maux (fonctionnalités principales : connexion, inscription, déconnexion, accès à son compte utilisateur, historique des séances...).",
 		"image": "src/assets/WVL.png",
 		"github_url": "https://github.com/svetlanouchka/wavely-app",
 		"app_url": "https://wavely-app.netlify.app/"

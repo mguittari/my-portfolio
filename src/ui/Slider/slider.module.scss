@@ -2,15 +2,35 @@
 
 .slider-container {
 	width: 100%;
-	overflow-x: scroll;
 	scroll-snap-type: x mandatory;
 	-webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    position: relative;
 }
+
+.slider-container::-webkit-scrollbar {
+    height: 10px; /* Hauteur de la barre horizontale (si nécessaire) */
+  }
+
+.slider-container::-webkit-scrollbar-track {
+    background-color: var.$light-mint;
+  }
+
+/* Modifier la couleur de la barre de défilement */
+.slider-container::-webkit-scrollbar-thumb {
+    background-color: var.$charcoal; 
+  }
+  
+  /* Modifier la couleur de la barre de défilement au survol */
+  .slider-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
 
 .slider-track {
 	display: flex;
 	scroll-snap-type: x mandatory;
     aspect-ratio: 1 / 1;
+    
 }
 
 .slider-track > * {
@@ -18,11 +38,18 @@
 	scroll-snap-align: center;
 }
 
+
+
 /* Responsive pour écrans plus larges */
 @media screen and (min-width: 768px) {
 	.slider-track > * {
-		flex: 0 0 50%; // ou 33.33% pour 3 visibles
+		flex: 0 0 33%; // ou 33.33% pour 3 visibles
+
 	}
+    .slider-track {
+        height: 34rem;
+    }
+
 }
 
 

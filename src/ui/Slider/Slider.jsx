@@ -8,7 +8,7 @@ export default function Slider() {
 			<div className={styles["slider-track"]}>
 				{data.map((project, index) => (
 					<SlideItem
-						key={index}
+						key={project.title}
 						title={project.title}
 						image={project.image}
 						description={project.description}

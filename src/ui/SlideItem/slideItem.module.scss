@@ -8,7 +8,6 @@
     height: 100%;
     width: 100%;
     padding-bottom: 1.5rem;
-    
 }
 
 .even {
@@ -39,8 +38,8 @@
 
 .img {
     border-radius: 0.7rem;
-    width: 90%;
-    margin: 1.2rem auto 0;
+    width: 85%;
+    margin: 1rem auto 0;
     display: flex;
 }
 
@@ -50,7 +49,6 @@
 
 @media screen and (width >= 768px){
     .item-sub-container {
-        width: 40%;
         margin: auto;
         overflow-x: hidden;
         scrollbar-width: none;
