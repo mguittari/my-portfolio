@@ -1,8 +1,28 @@
 @use "../../styles/variables" as var;
 
-.slider-container{
-    height: 400px;
-    position: relative;
+.slider-container {
+	width: 100%;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	-webkit-overflow-scrolling: touch;
+}
+
+.slider-track {
+	display: flex;
+	scroll-snap-type: x mandatory;
+    aspect-ratio: 1 / 1;
+}
+
+.slider-track > * {
+	flex: 0 0 95%;
+	scroll-snap-align: center;
+}
+
+/* Responsive pour écrans plus larges */
+@media screen and (min-width: 768px) {
+	.slider-track > * {
+		flex: 0 0 50%; // ou 33.33% pour 3 visibles
+	}
 }
 
 
