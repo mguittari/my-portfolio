@@ -22,7 +22,7 @@
 	},
 	{
 		"title": "BONNETEAU",
-		"description": "Jeu de cartes où il faut trouver l'as de pique. J'ai moi-même créé le design des cartes sur Gimp. La principale difficulté de ce projet a été de concevoir l'animation du retournement des cartes.",
+		"description": "Jeu de cartes où il faut trouver l'as de pique. J'ai moi-même créé le design des cartes sur Gimp. Les principales difficultés de ce projet ont été de concevoir l'animation du retournement des cartes et l'algorithme du mode 'jeu'.",
 		"image": "src/assets/BNT.png",
 		"github_url": "https://github.com/mguittari/bonneteau-app",
 		"app_url": "https://mguittari.github.io/bonneteau-app/"
