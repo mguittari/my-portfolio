@@ -23,7 +23,7 @@ export default function Block({
 		));
 	} else if (skillsData) {
 		contentToRender = skillsData.map((skill) => (
-			<li key={skill}>
+			<li className={styles.skills} key={skill}>
 				<p>{skill}</p>
 			</li>
 		));

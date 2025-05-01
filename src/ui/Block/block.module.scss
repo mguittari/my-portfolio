@@ -85,6 +85,11 @@ li::before {
     font-size: 2.2rem;
 }
 
+.skills::before {
+    content: "★"; 
+    font-size: 2.3rem;
+}
+
 @media screen and (width >= 680px){
     .technos, .formation, .expérience {
         font-size: calc(30px * 1.3)
