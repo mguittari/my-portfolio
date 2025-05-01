@@ -8,38 +8,44 @@ export default function Block({
 	skillsData,
 	expData,
 }) {
-	let contentToRender;
-
-	if (studiesData) {
-		contentToRender = studiesData.map((element) => (
-			<li key={element.dates}>
+	const renderStudies = () =>
+		studiesData.map(({ dates, title, school, description }) => (
+			<li className={styles.studies} key={dates}>
 				<p>
-					{element.title} <br />
-					{element.school} <br />
-					{element.dates} <br />
-					{element.description}
+					<strong>{title}</strong>
 				</p>
+				<p>►{school}</p>
+				<p>►{dates}</p>
+				<p>►{description}</p>
 			</li>
 		));
-	} else if (skillsData) {
-		contentToRender = skillsData.map((skill) => (
+
+	const renderSkills = () =>
+		skillsData.map((skill) => (
 			<li className={styles.skills} key={skill}>
 				<p>{skill}</p>
 			</li>
 		));
-	} else if (expData) {
-		contentToRender = expData.map((exp) => (
-			<li key={exp.dates}>
-				<p>
-					{exp.job} <br />
-					{exp.company} <br />
-					{exp.town} <br />
-					{exp.dates} <br />
-					{exp.description}
+
+	const renderExperience = () =>
+		expData.map(({ dates, job, company, town, description }) => (
+			<li className={styles.exp} key={dates}>
+				<p className={styles.job}>
+					<strong>{job}</strong>
 				</p>
+				<p className={styles.company}>►{company}</p>
+				<p className={styles.town}>►{town}</p>
+				<p className={styles.dates}>►{dates}</p>
+				<p className={styles.desc}>►{description}</p>
 			</li>
 		));
-	}
+
+	const contentToRender = (() => {
+		if (studiesData) return renderStudies();
+		if (skillsData) return renderSkills();
+		if (expData) return renderExperience();
+		return null;
+	})();
 
 	return (
 		<div id={styles[mainContainerId]} className={styles["main-container"]}>
