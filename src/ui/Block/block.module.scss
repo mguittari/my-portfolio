@@ -79,15 +79,34 @@ li {
     align-items: start; /* Alignement du texte et de la puce */
     gap: 8px; /* Espacement entre la puce et le texte */
 }
-  
-li::before {
-    content: "■"; 
-    font-size: 2.2rem;
+
+.exp::before, .studies::before {
+    content: "◆◆◆";
+    display:block;
+    font-size: 1.8rem;
+    margin: 0 auto 5px;
 }
+
+
 
 .skills::before {
     content: "★"; 
-    font-size: 2.3rem;
+    font-size: 1.8rem;
+}
+
+.exp, .studies {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px;
+}
+
+.exp > p, .studies > p {
+    padding: 0;
+}
+
+.skills > p {
+    white-space: nowrap;
 }
 
 @media screen and (width >= 680px){
@@ -96,6 +115,10 @@ li::before {
     }
     li::before {
         font-size: 2.9rem;
+    }
+    .skills::before {
+        content: "★"; 
+        font-size: 2.3rem;
     }
     li>p {
         font-size: 28px;
@@ -122,5 +145,10 @@ li::before {
     li::before {
         font-size: 1.9rem;
     }
+    .skills::before {
+        content: "★"; 
+        font-size: 1.6rem;
+    }
+    
 }
 
