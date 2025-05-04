@@ -1,0 +1,37 @@
+[
+	{
+		"title": "NOIR ET BLANC",
+		"description": "Blog d'expression libre développé en React/Node. Ce premier gros projet qui m'a appris les bases du développement full-stack (front-end : design, formulaires, interactivité, connexion, déconnexion... back-end : CRUD, génération de token, hachage de mot de passe, communication avec une base de données...). Plus de détails et d'images dans le readme du repo Github.",
+		"image": "src/assets/NB.png",
+		"github_url": "https://github.com/mguittari/noir-et-blanc-blog",
+		"app_url": null
+	},
+	{
+		"title": "TODOLIST",
+		"description": "Petite application de todo list avec plusieurs fonctionnalités (ajouter / rayer / supprimer une tâche, stockage de l'état dans le localstorage, thème de couleur, compteur de tâches dynamique).",
+		"image": "src/assets/TODO.png",
+		"github_url": "https://github.com/mguittari/to-do-list-react",
+		"app_url": "https://mguittari.github.io/to-do-list-react/"
+	},
+	{
+		"title": "ROULETTE RUSSE",
+		"description": "Jeu algorithmique développé en JavaScript vanilla pour me faire la main lors de ma deuxième formation à la Wild Code School.",
+		"image": "src/assets/RR.png",
+		"github_url": "https://github.com/mguittari/russian-roulette",
+		"app_url": "https://mguittari.github.io/russian-roulette/"
+	},
+	{
+		"title": "BONNETEAU",
+		"description": "Jeu de cartes où il faut trouver l'as de pique. J'ai moi-même créé le design des cartes sur Gimp. Les principales difficultés de ce projet ont été de concevoir l'animation du retournement des cartes et l'algorithme du mode 'jeu'.",
+		"image": "src/assets/BNT.png",
+		"github_url": "https://github.com/mguittari/bonneteau-app",
+		"app_url": "https://mguittari.github.io/bonneteau-app/"
+	},
+	{
+		"title": "WAVELY",
+		"description": "Application développée en équipe qui propose à l'utilisateur des fréquences thérapeutiques pour soulager certaines affections et maux (fonctionnalités principales : connexion, inscription, déconnexion, accès à son compte utilisateur, historique des séances...).",
+		"image": "src/assets/WVL.png",
+		"github_url": "https://github.com/svetlanouchka/wavely-app",
+		"app_url": "https://wavely-app.netlify.app/"
+	}
+]

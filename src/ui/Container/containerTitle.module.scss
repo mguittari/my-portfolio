@@ -1,0 +1,49 @@
+@use "../../styles/placeholders";
+@use "../../styles/variables" as var;
+
+#container-projects, #name-container, #job-container, #container-social-media {
+    height: 4rem;
+    width: 100%;
+    @extend %flex;
+}
+
+#name-container {
+    background-color: var.$forest-green;
+}
+
+#container-projects {
+    background-color: var.$light-mint;
+}
+
+#job-container {
+    background-color: var.$mint;
+}
+
+#container-social-media {
+    background-color: var.$bubblegum;
+}
+
+#title-projects, #my-name, #my-job, #title-social-media {
+    white-space: nowrap;
+}
+
+#title-projects {
+    color: var.$charcoal;
+}
+
+#my-name, #title-social-media {
+    color: var.$cream;
+}
+
+#my-job {
+    color: var.$sapphire-blue;
+}
+
+@media screen and (width > 768px){
+    #container-projects, #name-container, #job-container, #container-social-media {
+        height: calc(4rem * 2);
+    }
+    #title-projects, #my-name, #my-job, #title-social-media {
+        font-size: calc(28px * 2.3);
+    }
+}

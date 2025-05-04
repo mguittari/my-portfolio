@@ -1,0 +1,30 @@
+@use "../../styles/placeholders";
+@use "../../styles/variables" as var;
+
+.links-container{
+    @extend %flex;
+    flex-direction: column;
+}
+
+.link, .mail {
+    @extend %flex;
+    width: 100vw;
+    background-color: var.$light-yellow;
+    font-family: var.$font-family-link;
+    font-weight: 400;
+    font-size: .7rem;
+    padding: .8rem 0 .8rem 0;
+    color: var.$charcoal;
+}
+
+@media screen and (width >= 768px){
+    .link, .mail {
+        font-size: calc(.7rem * 2);
+        
+    }
+    .link:hover, .mail:hover {
+        background-color: var.$golden-yellow;
+        color: var.$cream;
+    }
+}
+

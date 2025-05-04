@@ -1,0 +1,67 @@
+@use "../../styles/variables" as var;
+
+.footer {
+    background-color: var.$light-pink;
+    padding-top: 15%;
+    position: relative;
+    color: var.$sapphire-blue;
+}
+
+.title {
+    text-align: start;
+    font-size: 24px;
+    padding: 0 0 10% 1rem;
+}
+
+.subtitle {
+    line-height: 15px;
+    padding: 0 0 .5rem .5rem;
+    font-weight: 500;
+}
+
+.arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    
+}
+
+.icon {
+    width: 35px;
+}
+
+.p {
+    font-weight: 450;
+}
+
+@media screen and (width >= 768px) {
+    .title {
+        font-size: calc(24px * 3);
+    }
+    .subtitle {
+        line-height: 32px;
+        
+    }
+    .p {
+        font-size: calc(20px * 3);
+        line-height: 75px;
+    }
+    .icon {
+        cursor: pointer;
+        width: 75px;
+    }
+    .arrow {
+        right: 25px;
+        bottom: 25px;
+        
+    }
+}
+
+@media screen and (width >= 850px) {
+   
+    .icon {
+        width: 128px;
+        cursor: pointer;
+    }
+    
+}

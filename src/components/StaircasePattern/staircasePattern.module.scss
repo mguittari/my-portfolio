@@ -1,0 +1,48 @@
+@use "../../styles/variables" as var;
+
+.row, .row2, .row3, .row4 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 125vw;
+}
+
+.row2 {
+    margin-left: -2.5rem;
+}
+
+.row3 {
+    margin-left: -4.5rem;
+}
+
+.row4 {
+    margin-left: -6.5rem;
+}
+
+.cell {
+    aspect-ratio: 1 / 1;
+    width: 75px;
+  }
+
+  .green {
+    background-color: var.$forest-green;
+  }
+
+  .purple {
+    background-color: var.$dark-purple;
+  }
+
+  @media screen and (width >= 460px) {
+    .row, .row2, .row3, .row4 {
+        grid-template-columns: repeat(16, 1fr);
+        // grid-template-rows: repeat(4, 1fr);
+    }
+    .cell {
+        width: 85px;
+      }
+  }
+
+  @media screen and (width >= 1024px) {
+    .cell {
+        width: 150px;
+      }
+  }

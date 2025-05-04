@@ -1,0 +1,16 @@
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+
+  @media screen and (min-width: 680px) {
+    .block-container {
+      flex: 1 1 33.33%;
+      aspect-ratio: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }

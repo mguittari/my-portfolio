@@ -1,0 +1,30 @@
+.arrow-left, .arrow-right {
+    all: unset;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.arrows {
+    position: absolute;
+}
+
+.icon {
+    width: 35px;
+}
+
+@media screen and (width >= 768px){
+    .icon {
+        width: 8rem;
+        cursor: pointer;
+    }
+    .arrow-right {
+        margin-right: 3rem;
+    }
+    .arrow-left {
+        margin-left: 3rem;
+    }
+}

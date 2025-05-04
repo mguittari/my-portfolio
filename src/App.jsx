@@ -1,18 +1,27 @@
 import "./app.scss";
+import TopLightPinkBlock from "./components/TopLightPinkBlock/TopLightPinkBlock";
+import TitleBlock from "./components/TitleBloc/TitleBlock";
+import SkillsAndStudiesBlocks from "./components/SkillsAndStudiesBlocks/SkillsAndStudiesBlocks";
+import Checkerboard from "./components/Checkerboard/Checkerboard";
+import ProjectsComponent from "./components/ProjectsComponent/ProjectsComponent";
+import KitchenFloor from "./components/KitchenFloor/KitchenFloor";
+import SocialMediaComponent from "./components/SocialMediaComponent/SocialMediaComponent";
+import StaircasePattern from "./components/StaircasePattern/StaircasePattern";
+import Footer from "./components/Footer/Footer";
 
 function App() {
 	return (
-		<>
-			<main>
-				<div className="top-bloc">
-					<p>Composant 1</p>
-				</div>
-				<div className="header-bloc">
-					<h1>Composant 2</h1>
-				</div>
-				<div className="education-bloc">Composant 3</div>
-			</main>
-		</>
+		<main>
+			<TopLightPinkBlock />
+			<TitleBlock />
+			<SkillsAndStudiesBlocks />
+			<Checkerboard />
+			<ProjectsComponent />
+			<KitchenFloor />
+			<SocialMediaComponent />
+			<StaircasePattern />
+			<Footer />
+		</main>
 	);
 }
 

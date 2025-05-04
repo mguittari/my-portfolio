@@ -1,0 +1,28 @@
+@use "../../styles/variables" as var;
+@use "../../styles/placeholders";
+
+.slider-container{
+    width: 200%;
+    animation: slide 16s infinite linear;
+    overflow: hidden;
+    @extend %flex;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (width > 768px){
+    .slider-container{
+        animation: slide 26s infinite linear;
+    }
+}

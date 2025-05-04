@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html, body {
+    scrollbar-width: none;
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+}

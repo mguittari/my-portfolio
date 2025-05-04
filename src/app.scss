@@ -1,18 +1,4 @@
-@use 'styles/variables' as var;
-
 main {
     //utiliser width: 100% si scrollbar cause un décalage
       width: 100vw;
     }
-
-.top-bloc {
-    background-color: var.$light-pink;
-}
-
-.header-bloc {
-    background-color: var.$forest-green;
-}
-
-.education-bloc {
-    background-color: var.$tomato-red;
-}

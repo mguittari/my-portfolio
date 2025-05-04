@@ -1,0 +1,52 @@
+{
+	"skills": [
+		"Git",
+		"Gitbash",
+		"Github",
+		"Gitlab",
+		"HTML/JSX",
+		"CSS/SCSS/Tailwind",
+		"JavaScript",
+		"React",
+		"Node",
+		"Express",
+		"SQL/MySQL",
+		"Figma",
+		"IA générative"
+	],
+	"studies": [
+		{
+			"title": "Formation JavaScript avancé",
+			"school": "Wild Code School",
+			"dates": "Nov 2024 - Sep 2025",
+			"description": "Approfondissement des notions abordées dans la formation précédente (voir ci-dessous), conception de projets parallèles (Roulette russe, Bonneteau...), veille technologique (Javascript et jeu vidéo, écoconception, tendances du design graphique...)"
+		},
+		{
+			"title": "Développeur Web et Web Mobile",
+			"school": "Wild Code School",
+			"dates": "Oct 2023 - Sep 2024",
+			"description": "Bootcamp de 7 mois où j'ai appris et pratiqué les bases du développement web (JavaScript, React, Node, Express, maquettage, conception de base de données...), travail en équipe sur un site de voyage (méthode agile, Git workflow...), travail solo sur un blog d'expression libre (voir plus bas)"
+		},
+
+		{
+			"title": "Master Création Littéraire",
+			"school": "ESADHaR et Université du Havre",
+			"dates": "Sep 2015 - Juin 2017",
+			"description": "Expérimentation de pratiques poétiques et plastiques, collaboration avec les étudiants en design graphique, initiation aux outils de publication numérique et à la typographie"
+		}
+	],
+	"links": [
+		"https://www.github.com/mguittari",
+		"https://www.linkedin.com/in/mattiasguittari",
+		"https://www.x.com/mattguittari"
+	],
+	"experience": [
+		{
+			"job": "Stage développeur créatif full-stack",
+			"company": "Mindoza",
+			"town": "Aix-en-provence",
+			"dates": "Avr 2025 - Juin 2025",
+			"description": "Développement d'applications créatives full-stack autour de l'IA générative (ChatGPT, DALL·E, Stable Diffusion) mais aussi intégration classique, respect des contraintes clients, travail en équipe"
+		}
+	]
+}
