@@ -19,7 +19,7 @@ export default function SlideItem({
 			>
 				<div className={styles.content}>
 					<div>
-						<img className={styles.img} src={image} alt="Blog noir et blanc" />
+						<img className={styles.img} src={image} alt="" />
 						<p className={styles.description}>{description}</p>
 					</div>
 					<div>
