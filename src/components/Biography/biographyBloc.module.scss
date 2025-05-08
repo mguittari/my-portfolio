@@ -1,0 +1,52 @@
+@use "../../styles/variables" as var;
+
+.main-container{
+    width: 100vw;
+    color: var.$cream;
+    background-color: var.$dark-purple;
+    
+}
+
+.pic-container {
+    background-color: var.$cream;
+    display: block;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.matt {
+    width: 100%;
+    display: block;
+}
+
+.bio-container > p {
+    padding: 0.6rem 1rem;
+}
+
+@media screen and (width >= 1000px) {
+    .title {
+        font-size: calc(24px * 2);
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .pic-container {
+        width: 100%;
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .main-container {
+        padding: 1rem;
+    }
+
+    .bio {
+        font-size: 24px;
+    }
+}
