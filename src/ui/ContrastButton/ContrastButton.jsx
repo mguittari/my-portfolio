@@ -10,7 +10,16 @@ export default function ContrastButton() {
 			className={styles["container-button"]}
 		>
 			<label className={styles.switch}>
-				<input type="checkbox" checked={contrast} onChange={toggleContrast} />
+				<input
+					type="checkbox"
+					checked={contrast}
+					onChange={toggleContrast}
+					aria-label={
+						contrast
+							? "Réduire les contrastes visuels"
+							: "Augmenter les contrastes visuels"
+					}
+				/>
 
 				<span className={styles.slider} />
 			</label>
