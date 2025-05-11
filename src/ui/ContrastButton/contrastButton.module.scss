@@ -6,6 +6,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
+  border: none;
 }
 
 .switch {
@@ -53,4 +54,3 @@
   .switch input:checked + .slider:before {
     transform: translateX(1.5em);
   }
-  
