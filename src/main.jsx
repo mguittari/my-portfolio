@@ -2,9 +2,12 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles/index.scss";
 import App from "./App.jsx";
+import ContrastProvider from "../src/context/ContrastContext/ContrastProvider.jsx";
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<App />
+		<ContrastProvider>
+			<App />
+		</ContrastProvider>
 	</StrictMode>,
 );

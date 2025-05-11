@@ -1,15 +1,16 @@
+import ContrastButton from "../../ui/ContrastButton/ContrastButton";
 import styles from "./biographyBloc.module.scss";
 
 export default function BiographyBloc() {
 	return (
 		<div className={styles["main-container"]}>
-			{" "}
+			<ContrastButton />{" "}
 			<div>
 				<h2 className={styles.title}>QUI SUIS-JE ?</h2>
 			</div>
 			<div className={styles.content}>
 				<div className={styles["pic-container"]}>
-					<img className={styles.matt} src="/M4.png" alt="" />
+					<img className={styles.matt} src="/MATTT.png" alt="" />
 				</div>
 				<div className={styles["bio-container"]}>
 					<p className={styles.bio}>

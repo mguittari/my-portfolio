@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import styles from "./staircasePattern.module.scss";
+import ContrastContext from "../../context/ContrastContext/ContrastContext";
 
 export default function StaircasePattern() {
+	const { contrast } = useContext(ContrastContext);
+
 	const [cellCount, setCellCount] = useState(8);
 
 	useEffect(() => {
@@ -22,6 +25,7 @@ export default function StaircasePattern() {
 			<div className={styles.row}>
 				{row.map((_, index) => (
 					<div
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						key={index}
 						className={`${styles.cell} ${index % 2 === 0 ? styles.green : styles.purple}`}
 					/>
@@ -30,6 +34,7 @@ export default function StaircasePattern() {
 			<div className={styles.row2}>
 				{row.map((_, index) => (
 					<div
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						key={index}
 						className={`${styles.cell} ${index % 2 === 0 ? styles.green : styles.purple}`}
 					/>
@@ -38,6 +43,7 @@ export default function StaircasePattern() {
 			<div className={styles.row3}>
 				{row.map((_, index) => (
 					<div
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						key={index}
 						className={`${styles.cell} ${index % 2 === 0 ? styles.green : styles.purple}`}
 					/>
@@ -46,6 +52,7 @@ export default function StaircasePattern() {
 			<div className={styles.row4}>
 				{row.map((_, index) => (
 					<div
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						key={index}
 						className={`${styles.cell} ${index % 2 === 0 ? styles.green : styles.purple}`}
 					/>
