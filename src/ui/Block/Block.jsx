@@ -7,6 +7,7 @@ export default function Block({
 	studiesData,
 	skillsData,
 	expData,
+	className,
 }) {
 	const renderStudies = () =>
 		studiesData.map(({ dates, title, school, description }) => (
@@ -50,7 +51,10 @@ export default function Block({
 	return (
 		<div id={styles[mainContainerId]} className={styles["main-container"]}>
 			<h2 className={styles[title.toLowerCase()]}>{title}</h2>
-			<div id={styles[subContainerId]} className={styles["sub-container"]}>
+			<div
+				id={styles[subContainerId]}
+				className={`${styles["sub-container"]} ${styles[className] || ""}`}
+			>
 				<div className={styles.content}>
 					<ul className={styles.list}>{contentToRender}</ul>
 				</div>

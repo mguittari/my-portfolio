@@ -1,13 +1,17 @@
 @use "../../styles/placeholders";
 @use "../../styles/variables" as var;
 
-#container-projects, #name-container, #job-container, #container-social-media {
+#container-projects, .name-container, #job-container, .container-social-media {
     height: 4rem;
     width: 100%;
     @extend %flex;
 }
 
-#name-container {
+#title-color-contrast {
+    background-color: #0A8556;
+}
+
+.name-container {
     background-color: var.$forest-green;
 }
 
@@ -19,8 +23,12 @@
     background-color: var.$mint;
 }
 
-#container-social-media {
+.container-social-media {
     background-color: var.$bubblegum;
+}
+
+#contrasted {
+    background-color: #C50779;
 }
 
 #title-projects, #my-name, #my-job, #title-social-media {
@@ -40,7 +48,7 @@
 }
 
 @media screen and (width > 768px){
-    #container-projects, #name-container, #job-container, #container-social-media {
+    #container-projects, .name-container, #job-container, .container-social-media {
         height: calc(4rem * 2);
     }
     #title-projects, #my-name, #my-job, #title-social-media {
