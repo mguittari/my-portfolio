@@ -21,10 +21,7 @@ export default function BiographyBloc() {
 						de développeur web à l'automne 2023. Mon objectif est de me
 						spécialiser dans le développement front-end mais j'aime aussi le
 						back-end, surtout depuis que je manipule les API d'IA génératives
-						dans le cadre de mon stage chez Mindoza, où je travaille
-						actuellement. <br />
-						<br />
-						Je suis à la recherche d'un poste (CDD ou CDI) à partir du 16 juin
+						dans le cadre de mon travail chez Mindoza, que j'ai rejoint en avril
 						2025.
 					</p>
 				</div>
